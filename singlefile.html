@@ -41,68 +41,69 @@
     <meta name="twitter:description" content="Play unbl*cked games like Crazy Cattle 3D and DriveMad on GN-Math. Fast, free, no downloads—perfect for school or home.">
     <style>
 :root {
-    --primary: #fc2651;
-    --primary-hover: #e91e47;
-    --primary-light: rgba(252, 38, 81, 0.1);
-    --primary-lighter: rgba(252, 38, 81, 0.05);
-    --accent: #8b5cf6;
+    /* Universe / Space Theme (Light Mode) */
+    --primary: #5b6ee1; /* cosmic blue */
+    --primary-hover: #4a5bd0;
+    --primary-light: rgba(91, 110, 225, 0.12);
+    --primary-lighter: rgba(91, 110, 225, 0.06);
+    --accent: #8b5cf6; /* violet accent */
     --accent-light: rgba(139, 92, 246, 0.1);
     --success: #10b981;
     --warning: #f59e0b;
     --text: #1a1a1a;
     --text-muted: #6b7280;
     --text-light: #9ca3af;
-    --bg: #ffffff;
-    --bg-secondary: #f8fafc;
+    --bg: #f8fafc;
+    --bg-secondary: #edf2f7;
     --surface: #ffffff;
     --surface-hover: #f1f5f9;
     --border: #e2e8f0;
     --border-light: #f1f5f9;
-    --glass: rgba(255, 255, 255, 0.8);
+    --glass: rgba(255, 255, 255, 0.85);
     --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.06);
+    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.08);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-    --shadow-glow: 0 0 20px rgba(252, 38, 81, 0.3);
+    --shadow-glow: 0 0 20px rgba(91, 110, 225, 0.25);
     --radius: 12px;
     --radius-sm: 8px;
     --radius-lg: 16px;
     --radius-xl: 20px;
-    --gradient-primary: linear-gradient(135deg, #fc2651 0%, #e91e47 100%);
-    --gradient-accent: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    --gradient-primary: linear-gradient(135deg, #5b6ee1 0%, #8b5cf6 100%);
+    --gradient-accent: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
     --gradient-surface: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
 }
 
 .dark-mode {
-    --primary: #fc2651;
-    --primary-hover: #ff4d75;
-    --primary-light: rgba(252, 38, 81, 0.15);
-    --primary-lighter: rgba(252, 38, 81, 0.08);
-    --accent: #a855f7;
-    --accent-light: rgba(168, 85, 247, 0.15);
+    /* Universe / Space Theme (Dark Mode) */
+    --primary: #8b9cf9;
+    --primary-hover: #a5b4fc;
+    --primary-light: rgba(139, 156, 249, 0.18);
+    --primary-lighter: rgba(139, 156, 249, 0.08);
+    --accent: #c084fc;
+    --accent-light: rgba(192, 132, 252, 0.15);
     --success: #34d399;
     --warning: #fbbf24;
-    --text: #f1f5f9;
+    --text: #e2e8f0;
     --text-muted: #94a3b8;
     --text-light: #64748b;
-    --bg: #0f172a;
-    --bg-secondary: #1e293b;
-    --surface: #1e293b;
-    --surface-hover: #334155;
-    --border: #334155;
-    --border-light: #475569;
-    --glass: rgba(30, 41, 59, 0.8);
+    --bg: #0b1120; /* deep space navy */
+    --bg-secondary: #1a2238;
+    --surface: #1f2937;
+    --surface-hover: #2d3748;
+    --border: #2c3a52;
+    --border-light: #384863;
+    --glass: rgba(26, 34, 56, 0.8);
     --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.4);
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.5), 0 1px 2px -1px rgb(0 0 0 / 0.5);
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6), 0 4px 6px -4px rgb(0 0 0 / 0.6);
-    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7), 0 8px 10px -6px rgb(0 0 0 / 0.7);
-    --shadow-glow: 0 0 20px rgba(252, 38, 81, 0.4);
-    --gradient-primary: linear-gradient(135deg, #fc2651 0%, #ff4d75 100%);
-    --gradient-accent: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+    --shadow-glow: 0 0 25px rgba(139, 156, 249, 0.4);
+    --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #8b5cf6 100%);
+    --gradient-accent: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
     --gradient-surface: linear-gradient(135deg, #1e293b 0%, #334155 100%);
 }
+
 
 * {
     box-sizing: border-box;
